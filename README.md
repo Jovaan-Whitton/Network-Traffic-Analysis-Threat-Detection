@@ -1,4 +1,5 @@
 # Intro to Network Traffic Analysis – Hack The Box
+Hands-on lab from Hackthebox focusing on PCAP analysis using TCPDump and Wireshark
 
 ## 🔍 Project Overview
 This hands-on lab focused on analyzing captured network traffic (PCAP files) to detect suspicious behavior using tools like **Wireshark** and **TCPdump**.
@@ -59,5 +60,4 @@ Successfully identified malicious behavior and extracted indicators for threat h
 - `notes.md`: Summary of commands and findings
 - `ioc_list.txt`: List of extracted IOCs
 - `screenshots/`: Folder with annotated images
-# intro-to-network-traffic-analysis-htb
-Hands-on lab from Hackthebox focusing on PCAP analysis using TCPDump and Wireshark
+
