@@ -48,6 +48,16 @@ This hands-on lab from Hack The Box focused on analyzing captured network traffi
 
 ---
 
+## Screenshots
+### DNS Tunneling Detection
+![DNS Tunneling Detected](screenshots/dns-tunnel-detected.png)
+### Wireshark HTTP Filter Results
+![Wireshark HTTP Filter](screenshots/wireshark-http-filter.png)
+### TCPdump Output Highlighting Suspicious Traffic
+![TCPdump Output](screenshots/tcpdump-suspicious.png)
+
+---
+
 ## Documentation
 - [PCAP Analysis Commands](pcap-analysis-commands.md)
 - [Network Findings](network-findings.md)
