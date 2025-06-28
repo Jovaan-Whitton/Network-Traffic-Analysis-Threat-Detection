@@ -1,63 +1,68 @@
 # Intro to Network Traffic Analysis – Hack The Box
-Hands-on lab from Hackthebox focusing on PCAP analysis using TCPDump and Wireshark
 
-## 🔍 Project Overview
-This hands-on lab focused on analyzing captured network traffic (PCAP files) to detect suspicious behavior using tools like **Wireshark** and **TCPdump**.
-
-**Platform:** Hack The Box  
-**Tools Used:** Wireshark, TCPdump  
-**Skills Gained:** Packet analysis, protocol decoding, identifying malicious traffic, extracting IOCs (Indicators of Compromise)
+## Project Overview
+This hands-on lab from Hack The Box focused on analyzing captured network traffic using **Wireshark** and **tcpdump**. The goal was to detect suspicious behavior, extract indicators of compromise (IOCs), and understand traffic anomalies that could indicate cyberattacks.
 
 ---
 
-## 📂 Project Objectives
-- Understand the structure and flow of network packets.
-- Identify suspicious activity (e.g., DNS tunneling, TCP/UDP anomalies).
-- Extract meaningful data from raw traffic.
+## Objectives
+- Load and filter PCAP files using Wireshark and tcpdump
+- Identify DNS tunneling and suspicious TCP sessions
+- Extract meaningful metadata and IOCs
+- Reconstruct attacker behavior from traffic logs
 
 ---
 
-## 🛠 Steps Taken
-
-1. **Loaded PCAP into Wireshark**
-   - Applied filters to narrow down traffic (e.g., `http`, `dns`, `tcp.port == 443`)
-   - Identified out-of-place DNS queries
-
-2. **Analyzed Traffic Behavior**
-   - Spotted unusual DNS tunneling behavior
-   - Followed TCP streams to view suspicious payloads
-
-3. **Extracted IOCs**
-   - Captured IPs, domain names, file hashes
-   - Logged timestamps of activity
-
-4. **Used TCPdump for CLI-Based Capture**
-   - Practiced filters: `tcpdump -r capture.pcap -nn`
-   - Validated traffic volume and types
+## Tools & Technologies
+- Platform: Hack The Box Academy
+- Tools: Wireshark, tcpdump
+- Environment: Simulated PCAP Analysis Lab
+- File Types: `.pcap`, `.txt`, `.png`
 
 ---
 
-## 🧠 Key Learnings
-- Gained hands-on skills in reading network logs.
-- Improved understanding of TCP/IP, DNS tunneling, and packet structure.
-- Learned to use CLI and GUI tools for packet inspection.
+## Steps Taken
+
+1. **Opened PCAP in Wireshark**
+   - Applied filters: `http`, `dns`, `tcp.port == 443`
+   - Observed DNS tunneling signatures
+
+2. **Used tcpdump for CLI Analysis**
+   - Filtered packet streams to isolate anomalies
+   - Verified findings from Wireshark in raw format
+
+3. **Extracted Indicators of Compromise**
+   - Noted suspicious domains, IPs, and file hashes
+   - Created IOC list for reporting
+
+4. **Documented Findings**
+   - Summarized behavior patterns and matched them to C2 communication tactics
 
 ---
 
-## 📸 Screenshots
-_Include screenshots in a `screenshots/` folder and reference them here using Markdown._
+## Key Skills & Learnings
+- Improved ability to interpret raw packet data
+- Practiced filtering and isolating relevant traffic
+- Identified early-stage attack behavior
+- Strengthened IOC extraction and documentation workflow
 
-![Packet Analysis](screenshots/wireshark-filter.png)
+---
+
+## Documentation
+- [PCAP Analysis Commands](pcap-analysis-commands.md)
+- [Network Findings](network-findings.md)
+- [Visual walkthrough of key steps](screenshots/)
 
 ---
 
 ## ✅ Result
-Successfully identified malicious behavior and extracted indicators for threat hunting.
+Completed the lab with successful identification of malicious behavior within PCAP files. Demonstrated the ability to extract, document, and analyze IOCs—skills critical for SOC and incident response roles.
 
 ---
 
-## 📁 Files Included
-- `notes.md`: Summary of commands and findings
-- `ioc_list.txt`: List of extracted IOCs
-- `screenshots/`: Folder with annotated images
+## Let’s Connect
+I’m actively seeking IT Support or SOC Analyst roles in New York City or remote/hybrid environments. Let’s connect!
+
+**Email**: jovaan.jwhitton@gmail.com  
+**LinkedIn**: [linkedin.com/in/jovaan-whitton-profile](https://linkedin.com/in/jovaan-whitton-profile)
 
