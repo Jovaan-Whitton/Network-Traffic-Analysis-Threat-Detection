@@ -24,7 +24,7 @@ This hands-on lab from Hack The Box focused on analyzing captured network traffi
 ## Steps Taken
 
 1. **Opened PCAP in Wireshark**
-   - Applied filters: `http`, `dns`, `tcp.port == 443`
+   - Applied filters: `tcp`, `rdp`, `!udp && !arp`
    - Observed DNS tunneling signatures
 
 2. **Used tcpdump for CLI Analysis**
