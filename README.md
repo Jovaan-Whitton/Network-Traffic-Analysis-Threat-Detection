@@ -59,7 +59,7 @@ This hands-on lab from Hack The Box focused on analyzing captured network traffi
 ---
 
 ## Documentation
-- [PCAP Analysis Commands](pcap-analysis-commands.md)
+- [PCAP Analysis Commands](docs/pcap-analysis-commands.md)
 - [Network Findings](network-findings.md)
 - [Visual walkthrough of key steps](screenshots/)
 
