@@ -83,3 +83,8 @@ Filters for HTTP and HTTPS traffic from the capture file.
 - `port 80`: HTTP  
 - `port 443`: HTTPS  
 - Parentheses are needed to group filters correctly in `tcpdump`
+
+---
+
+**Tip:** These commands are essential for inspecting PCAP files in real-time or offline, helping detect DNS queries, HTTP sessions, and potentially malicious network activity.
+"""
