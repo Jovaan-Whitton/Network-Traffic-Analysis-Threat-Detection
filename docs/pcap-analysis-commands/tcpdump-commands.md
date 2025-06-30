@@ -2,6 +2,14 @@
 
 This document outlines the `tcpdump` commands I used to capture and analyze network traffic during the Intro to Network Traffic Analysis lab.	
 
+I chose `tcpdump` for its lightweight, command-line capabilities, which allowed me to:
+- Capture live traffic from specific interfaces
+- Filter by port, protocol, and host during capture or offline analysis
+- Save traffic into `.pcap` files for deeper inspection
+- Examine packet contents quickly using hex and ASCII output
+
+These commands supported real-time visibility and efficient CLI-based threat hunting during the lab.
+
 ### Command:
 `which tcpdump`  
 **Explanation:**  
