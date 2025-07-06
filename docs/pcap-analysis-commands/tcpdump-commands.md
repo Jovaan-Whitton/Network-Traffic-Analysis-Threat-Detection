@@ -15,7 +15,7 @@ These commands supported real-time visibility and efficient CLI-based threat hun
 **Explanation:**  
 Returns the full path of the `tcpdump` binary on your system, confirming it is installed and accessible.
 
-![tcpdump -D](./screenshots/tcpdump-which-D-interface.png)
+![tcpdump -D](/screenshots/tcpdump-which-D-interface.png)
 
 ---
 
@@ -47,7 +47,7 @@ Captures live traffic on the `ens3` interface with detailed output.
 - `-v`: Verbose output (more header info)  
 - `-X`: Shows packet contents in both hex and ASCII
   
-![tcpdump -D](./screenshots/tcpdump-ens3-vX.png)
+![tcpdump -D](/screenshots/tcpdump-ens3-vX.png)
 
 ---
 
@@ -60,7 +60,7 @@ Captures live traffic and saves it to a `.pcap` file for later analysis.
 - `-v`: Verbose mode  
 - `-w ~/sample.pcap`: Write packet data to `sample.pcap` in the home directory
   
-![tcpdump -nvw](./screenshots/tcpdump-capture-save.png)
+![tcpdump -nvw](/screenshots/tcpdump-capture-save.png)
 
 ---
 
@@ -83,7 +83,7 @@ Reads packets from a saved `.pcap` file and shows deep packet information.
 **Explanation:**  
 Reads all packets from a saved `.pcap` file without applying any filters.
 
-![tcpdump -r](./screenshots/tcpdump-read-all.png)
+![tcpdump -r](/screenshots/tcpdump-read-all.png)
 
 ---
 
@@ -97,7 +97,7 @@ Reads a .pcap file and filters for DNS traffic (UDP over port 53).
 - r: Read from file
 - `port 53`: Standard DNS port
   
-![tcpdump DNS filter](./screenshots/tcpdump-read-pcap-port-filter.png)
+![tcpdump DNS filter](/screenshots/tcpdump-read-pcap-port-filter.png)
 
 ---
 
