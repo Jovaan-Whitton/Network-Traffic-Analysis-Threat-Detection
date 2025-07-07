@@ -1,4 +1,4 @@
-# Intro to Network Traffic Analysis – Hack The Box
+# Network Traffic Analysis and Threat Detection
 
 ## Project Overview
 This hands-on lab from Hack The Box focused on analyzing captured network traffic using **Wireshark** and **tcpdump**. The goal was to detect suspicious behavior, extract indicators of compromise (IOCs), and understand traffic anomalies that could indicate cyberattacks.
