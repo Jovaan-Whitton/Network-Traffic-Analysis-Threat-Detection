@@ -26,7 +26,7 @@ Useful for isolating DNS requests or checking outbound connections to a known ho
 Filters for HTTP packets that include JPEG image transfers (JFIF format).  
 Helps identify if image-based content is being transferred, which may be used for steganography or data exfiltration.
 
-![JFIF HTTP filter](./screenshots/wireshark-http-image-jfif.png)
+![JFIF HTTP filter](/screenshots/wireshark-http-image-jfif.png)
 
 ---
 
@@ -36,7 +36,7 @@ Helps identify if image-based content is being transferred, which may be used fo
 Excludes all TCP traffic from the view.  
 Useful when focusing on UDP, ICMP, or other non-TCP protocols.
 
-![No TCP filter](./screenshots/wireshark-not-tcp.png)
+![No TCP filter](/screenshots/wireshark-not-tcp.png)
 
 ---
 
@@ -46,7 +46,7 @@ Useful when focusing on UDP, ICMP, or other non-TCP protocols.
 Excludes both UDP and ARP traffic.  
 This helps isolate other traffic types such as ICMP or obscure protocols that may indicate malicious activity.
 
-![No UDP or ARP](./screenshots/wireshark-not-udp-arp.png)
+![No UDP or ARP](/screenshots/wireshark-not-udp-arp.png)
 
 ---
 
@@ -56,7 +56,7 @@ This helps isolate other traffic types such as ICMP or obscure protocols that ma
 Displays all packets related to **Remote Desktop Protocol (RDP)**.  
 Useful for identifying remote desktop sessions or detecting unauthorized remote access attempts.
 
-![RDP traffic filter](./screenshots/wireshark-rdp-traffic.png)
+![RDP traffic filter](/screenshots/wireshark-rdp-traffic.png)
 
 ---
 
