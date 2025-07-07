@@ -30,9 +30,12 @@ Lists all available network interfaces (e.g., `eth0`, `wlan0`) you can use for p
 ---
 
 ### Command:
-`tcpdump -i ens3`  
+`sudo tcpdump -i ens3`  
 **Explanation:**  
 Captures live traffic on the `ens3` interface.
+
+- `sudo`: stands for "superuser do" and is used to execute a command with temporary elevated (administrator/root) privileges.
+- `-i ens3`: Interface to listen on
 
 (See above shared screenshot: `tcpdump-which-D-interface.png`)
 
@@ -43,7 +46,6 @@ Captures live traffic on the `ens3` interface.
 **Explanation:**
 Captures live traffic on the `ens3` interface with detailed output.
 
-- `-i ens3`: Interface to listen on  
 - `-v`: Verbose output (more header info)  
 - `-X`: Shows packet contents in both hex and ASCII
   
@@ -52,7 +54,7 @@ Captures live traffic on the `ens3` interface with detailed output.
 ---
 
 ### Command:
-`tcpdump -i ens3 -nvw ~/Desktop/Test.pcap`  
+`sudo tcpdump -i ens3 -nvw ~/Desktop/Test.pcap`  
 **Explanation:**  
 Captures live traffic and saves it to a `.pcap` file for later analysis.
 
@@ -65,7 +67,7 @@ Captures live traffic and saves it to a `.pcap` file for later analysis.
 ---
 
 ### Command:
-`tcpdump -nnSXr ~Desktop/Test.pcap`  
+`sudo tcpdump -nnSXr ~Desktop/Test.pcap`  
 **Explanation:**  
 Reads packets from a saved `.pcap` file and shows deep packet information.
 
@@ -79,7 +81,7 @@ Reads packets from a saved `.pcap` file and shows deep packet information.
 ---
 
 ### Command:
-`tcpdump -r file.pcap`  
+`sudo tcpdump -r file.pcap`  
 **Explanation:**  
 Reads all packets from a saved `.pcap` file without applying any filters.
 
@@ -88,7 +90,7 @@ Reads all packets from a saved `.pcap` file without applying any filters.
 ---
 
 ### Command:
-`tcpdump -nnSr ~/Desktop/Test.pcap port 53`  
+`sudo tcpdump -nnSr ~/Desktop/Test.pcap port 53`  
 **Explanation:**  
 Reads a .pcap file and filters for DNS traffic (UDP over port 53).
 
@@ -102,7 +104,7 @@ Reads a .pcap file and filters for DNS traffic (UDP over port 53).
 ---
 
 ### Command:
-`tcpdump -nnSr ~/Desktop/Test.pcap port 80`  
+`sudo tcpdump -nnSr ~/Desktop/Test.pcap port 80`  
 **Explanation:**  
 Filters for HTTP and HTTPS traffic from the capture file.
 
