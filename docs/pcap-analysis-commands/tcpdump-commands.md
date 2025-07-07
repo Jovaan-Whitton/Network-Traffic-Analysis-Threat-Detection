@@ -24,7 +24,7 @@ Returns the full path of the `tcpdump` binary on your system, confirming it is i
 **Explanation:**  
 Lists all available network interfaces (e.g., `eth0`, `wlan0`) you can use for packet capture.
 
-(See shared screenshot: `tcpdump-which-D-interface.png`)
+(See above shared screenshot: `tcpdump-which-D-interface.png`)
 
 
 ---
@@ -34,7 +34,7 @@ Lists all available network interfaces (e.g., `eth0`, `wlan0`) you can use for p
 **Explanation:**  
 Captures live traffic on the `ens3` interface.
 
-(See shared screenshot: `tcpdump-which-D-interface.png`)
+(See above shared screenshot: `tcpdump-which-D-interface.png`)
 
 ---
 
@@ -74,7 +74,7 @@ Reads packets from a saved `.pcap` file and shows deep packet information.
 - `-S`: Show absolute TCP sequence numbers  
 - `-X`: Show full packet content in hex and ASCII
   
-(See shared screenshot: `tcpdump-capture-save.png`)
+(See above shared screenshot: `tcpdump-capture-save.png`)
 
 ---
 
@@ -113,7 +113,7 @@ Filters for HTTP and HTTPS traffic from the capture file.
   
 *Same screenshot shown above, reused for HTTP traffic example.*
 
-(See shared screenshot: `tcpdump-read-pcap-port-filter.png`)
+(See above shared screenshot: `tcpdump-read-pcap-port-filter.png`)
 
 ---
 
