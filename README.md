@@ -52,7 +52,7 @@ This hands-on lab from Hack The Box focused on analyzing captured network traffi
 ### DNS Tunneling Detection
 ![DNS Tunneling Detected](screenshots/dns-tunnel-detected.png)
 ### Wireshark HTTP Filter Results
-![Wireshark HTTP Filter](screenshots/wireshark-http-filter.png)
+![Wireshark HTTP Filter](screenshots/wireshark-http.png)
 ### TCPdump Output Highlighting Suspicious Traffic
 ![TCPdump Output](screenshots/tcpdump-suspicious.png)
 
