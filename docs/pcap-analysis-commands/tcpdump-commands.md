@@ -30,7 +30,7 @@ Lists all available network interfaces (e.g., `eth0`, `wlan0`) you can use for p
 ---
 
 ### Command:
-`tcpdump -i ens3 -vX`  
+`tcpdump -i ens3`  
 **Explanation:**  
 Captures live traffic on the `ens3` interface.
 
