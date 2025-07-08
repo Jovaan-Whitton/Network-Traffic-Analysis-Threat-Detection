@@ -120,4 +120,3 @@ Filters for HTTP and HTTPS traffic from the capture file.
 ---
 
 **Tip:** These commands are essential for inspecting PCAP files in real-time or offline, helping detect DNS queries, HTTP sessions, and potentially malicious network activity.
-"""
