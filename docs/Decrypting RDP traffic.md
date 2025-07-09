@@ -37,7 +37,7 @@ This guided analysis lab focuses on decrypting and analyzing **RDP (Remote Deskt
 - Verified TCP sessions activity using: `tcp.port == 3389`
 
 <details>
-  <summary> Encrypted Traffic & Port Filter Screenshots</summary>
+  <summary> Encrypted Traffic & Port Filter</summary>
 
 ### Encrypted RDP Traffic (Before Decryption)  
 ![Encrypted RDP Traffic – No Readable Data](/screenshots/encrypted-rdp-traffic.png)
@@ -61,7 +61,7 @@ Navigated to:
 -Refreshed PCAP file to reprocess traffic with new decryption settings.
 
 <details>
-<summary> RSA Key Configuration Screenshots</summary>
+<summary> RSA Key Configuration</summary>
 
 ### RSA Key Configuration  
 ![Configuring Wireshark to use RSA key](/screenshots/decrypting-rdp-traffic.png)
@@ -80,7 +80,7 @@ Applied:
 - Used Follow TCP Stream to analyze the full conversation between client and server.
 
 <details>
-<summary> Decrypted traffic Screenshots</strong></summary>
+<summary> Decrypted traffic</strong></summary>
 
 ### Decrypted traffic shows using rdp filter  
 ![RDP Traffic in the clear](/screenshots/decrypted-rdp-traffic.png)
