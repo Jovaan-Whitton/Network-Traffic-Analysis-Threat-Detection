@@ -66,7 +66,7 @@ Exported image files using:
   <summary>Exported image objects</summary>
   
 ![Objects to Export](/screenshots/objects-to-export.png)
-![Exported Objects](/screenshots/-exported-objects.png)
+![Exported Objects](/screenshots/objects-exported.png)
 
 </details>
 
