@@ -84,7 +84,7 @@ Filtered for FTP:
 
 `Filter: ftp`
 
-Identified server at `172.16.10.20` and verified login (authenticated or anonymous).
+Identified server at `172.16.10.20` and verified anonymous login.
 
 <details>
   <summary> FTP communication</summary>
