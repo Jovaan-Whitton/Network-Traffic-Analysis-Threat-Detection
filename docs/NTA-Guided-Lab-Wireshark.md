@@ -29,12 +29,11 @@ This lab simulates an internal incident response scenario where we analyzed susp
 - Used `Conversations` and `Protocol Hierarchy` tools to narrow down key traffic
 
 <details>
-<summary>Conversations & Protocol Overview</summary>
-<br>
+  <summary>Conversations & Protocol Overview</summary>
 
-![Conversations Tab](/screenshots/conversations-tool.png)
+![Conversations Tab](/screenshots/wireshark-conversation-tool.png)
 
-![Protocol Hierarchy](/screenshots/Hierarchy-tool.png)
+![Protocol Hierarchy](/screenshots/wireshark-hierarchy-tool.png)
 
 </details>
 
@@ -44,29 +43,26 @@ This lab simulates an internal incident response scenario where we analyzed susp
 
 ### Step 1: Filter UDP
 Filtered only `udp` packets:
-```wireshark
-udp
-```
+
+`!tcp`
+
 Result: Normal traffic (ARP, NAT, SSDP)
 
 <details>
-<summary>UDP Filtering</summary>
-<br>
+  <summary>UDP Filtering</summary>
 
-![UDP Traffic](/screenshots/udp-traffic.png)
+![UDP Traffic](/screenshots/wireshark-udp-traffic.png)
 
 </details>
 
 ### Step 2: Filter TCP
 Filtered only `tcp` by removing `udp` and `arp`:
-```wireshark
-!udp && !arp
-```
+
+`!udp && !arp`
 Result: Single persistent TCP connection between `10.129.43.4` and `10.129.43.29`
 
 <details>
-<summary>TCP Traffic</summary>
-<br>
+  <summary>TCP Traffic</summary>
 
 ![TCP Filtered](/screenshots/tcp-traffic-results.png)
 
@@ -79,8 +75,7 @@ Result: Single persistent TCP connection between `10.129.43.4` and `10.129.43.29
 Observed a full TCP session established, but no teardown:
 
 <details>
-<summary>TCP Handshake</summary>
-<br>
+  <summary>TCP Handshake</summary>
 
 ![TCP Handshake](/screenshots/odd-tcp-traffic.png)
 
@@ -93,8 +88,8 @@ Followed TCP stream from packet 3 — session still open.
 <summary>Followed Stream</summary>
 <br>
 
-![TCP Stream Output](/compromised-tcp-stream.png)
-![TCP Stream Output](/compromised-tcp-stream1.png)
+![TCP Stream Output](/screenshots/compromised-tcp-stream.png)
+![TCP Stream Output](/screenshots/compromised-tcp-stream1.png)
 
 </details>
 
