@@ -50,15 +50,14 @@ This guided analysis lab focuses on decrypting and analyzing **RDP (Remote Deskt
 
 ### 3. Configure Wireshark to Use RSA Key
 Navigated to:
-
 - Edit → Preferences → Protocols → TLS
-- Edited RSA Keys list with:
 
--IP Address: 10.129.43.29
--Port: 3389
--Protocol: tpkt
--Key File: server.key
--Refreshed PCAP file to reprocess traffic with new decryption settings.
+Edited RSA Keys list with:
+- IP Address: 10.129.43.29
+- Port: 3389
+- Protocol: tpkt
+- Key File: server.key
+- Refreshed PCAP file to reprocess traffic with new decryption settings.
 
 <details>
 <summary> RSA Key Configuration</summary>
@@ -73,10 +72,10 @@ Navigated to:
 ### 4. Analyze Decrypted RDP Traffic
 Applied:
 
-- rdp
-- Decrypted packets now visible:
-- rdp.slow.path.pduType
-- Session keystrokes and metadata
+- `rdp` and `tcp.port == 3389`
+- Decrypted packets now visible.
+- Determine who initiated the RDP connection and which server was targeted.
+- Identified which user account was used for the RDP connection
 - Used Follow TCP Stream to analyze the full conversation between client and server.
 
 <details>
