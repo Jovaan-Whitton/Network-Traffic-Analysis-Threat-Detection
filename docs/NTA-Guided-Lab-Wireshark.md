@@ -1,7 +1,7 @@
-
-# 🧠 Guided Network Traffic Analysis Lab – Hack The Box
+# Guided Network Traffic Analysis Lab – Hack The Box
 
 ## Project Overview
+
 This lab simulates an internal incident response scenario where we analyzed suspicious traffic originating from a known internal host. Using a provided `.pcap` file and Wireshark, we investigated abnormal communication patterns, filtered unusual protocols, followed TCP streams, and uncovered malicious behavior such as account creation and lateral movement.
 
 ---
@@ -24,12 +24,12 @@ This lab simulates an internal incident response scenario where we analyzed susp
 
 ---
 
-## 1️⃣ Define Scope and Identify Traffic
+## Define Scope and Identify Traffic
 - Focused on traffic **from 10.129.43.4** over the last **48 hours**
 - Used `Conversations` and `Protocol Hierarchy` tools to narrow down key traffic
 
 <details>
-<summary>🔍 Conversations & Protocol Overview</summary>
+<summary>Conversations & Protocol Overview</summary>
 <br>
 
 ![Conversations Tab](/storage/modules/81/guided-conversations.png)
@@ -40,7 +40,8 @@ This lab simulates an internal incident response scenario where we analyzed susp
 
 ---
 
-## 2️⃣ Filter UDP and TCP Traffic
+## Filter UDP and TCP Traffic
+
 ### Step 1: Filter UDP
 Filtered only `udp` packets:
 ```wireshark
@@ -49,7 +50,7 @@ udp
 Result: Normal traffic (ARP, NAT, SSDP)
 
 <details>
-<summary>📦 UDP Filtering</summary>
+<summary>UDP Filtering</summary>
 <br>
 
 ![UDP Traffic](/storage/modules/81/guided-udp.png)
@@ -73,12 +74,12 @@ Result: Single persistent TCP connection between `10.129.43.4` and `10.129.43.29
 
 ---
 
-## 3️⃣ Session Analysis – Suspicious TCP Activity
+## Session Analysis – Suspicious TCP Activity
 ### Three-Way Handshake Verified
 Observed a full TCP session established, but no teardown:
 
 <details>
-<summary>🤝 TCP Handshake</summary>
+<summary>TCP Handshake</summary>
 <br>
 
 ![TCP Handshake](/storage/modules/81/guided-handshake.png)
@@ -89,7 +90,7 @@ Observed a full TCP session established, but no teardown:
 Followed TCP stream from packet 3 — session still open.
 
 <details>
-<summary>🧵 Followed Stream</summary>
+<summary>Followed Stream</summary>
 <br>
 
 ![TCP Stream Output](/storage/modules/81/guided-stream.png)
@@ -103,7 +104,7 @@ Followed TCP stream from packet 3 — session still open.
 
 ---
 
-## 4️⃣ Findings & IR Recommendation
+## Findings & IR Recommendation
 ### Findings:
 - Reconnaissance and privilege escalation from host `10.129.43.4`
 - Account `hacker` created on host `10.129.43.29`
@@ -117,7 +118,7 @@ Followed TCP stream from packet 3 — session still open.
 
 ---
 
-## 🧠 Summary
+## Summary
 This lab provided practical experience in:
 - Real-world network forensic investigation
 - Using Wireshark’s built-in tools (filters, stream following, protocol views)
@@ -126,7 +127,7 @@ This lab provided practical experience in:
 
 ---
 
-## 📬 Let’s Connect
+## Let’s Connect
 I'm seeking entry-level roles in **Cybersecurity**, **SOC Analysis**, or **Incident Response** where I can use my growing traffic analysis and IR skills.
 
 **Email**: jovaan.jwhitton@gmail.com  
