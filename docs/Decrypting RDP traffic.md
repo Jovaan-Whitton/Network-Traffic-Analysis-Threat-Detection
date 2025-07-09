@@ -86,7 +86,7 @@ Applied:
 ![RDP Traffic in the clear](/screenshots/decrypted-rdp-traffic.png)
 
 ### TCP Connections 
-![TCP Connection Initiated](/screenshots/rdp-initiating-host-and-targeted-server.png)
+![TCP Connection Initiated](/screenshots/rdp-initiating-host-and-target-server.png)
 
 ### User Account Used
 ![Identified the account used](/screenshots/user-account.png)
