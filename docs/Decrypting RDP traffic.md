@@ -32,10 +32,21 @@ This guided analysis lab focuses on decrypting and analyzing **RDP (Remote Deskt
 
 ### 2. Filter for RDP traffic
 
-```wireshark
-rdp 
+- Filter using `rdp` 
 - No readable results appeared because RDP traffic is encrypted by default
 - Verified TCP sessions activity using: `tcp.port == 3389`
+
+<details>
+  <summary> Encrypted Traffic & Port Filter Screenshots</summary>
+
+### Encrypted RDP Traffic (Before Decryption)  
+![Encrypted RDP Traffic – No Readable Data](/screenshots/encrypted-rdp-traffic.png)
+
+### TCP Port 3389 Filter Applied  
+![Wireshark TCP Port 3389 Filter](/screenshots/tcp-port-3389-filter.png)
+
+</details>
+
 
 ### 3. Configure Wireshark to Use RSA Key
 Navigated to:
@@ -49,6 +60,16 @@ Navigated to:
 -Key File: server.key
 -Refreshed PCAP file to reprocess traffic with new decryption settings.
 
+<details>
+<summary> RSA Key Configuration Screenshots</summary>
+
+### RSA Key Configuration  
+![Configuring Wireshark to use RSA key](/screenshots/decrypting-rdp-traffic.png)
+
+
+</details>
+
+
 ### 4. Analyze Decrypted RDP Traffic
 Applied:
 
@@ -56,22 +77,32 @@ Applied:
 - Decrypted packets now visible:
 - rdp.slow.path.pduType
 - Session keystrokes and metadata
-
 - Used Follow TCP Stream to analyze the full conversation between client and server.
+
+<details>
+<summary> Decrypted traffic Screenshots</strong></summary>
+
+### Decrypted traffic show using rdp filter  
+![RDP Traffic in the clear](/screenshots/decrypted-rdp-traffic.png)
+
+### TCP Connections 
+![TCP Connection Initiated](/screenshots/rdp-initiating-host-and-targeted-server.png)
+
+### User Account Used
+![Identified the account used](/screenshots/user-account.png)
+
+</details>
+
 
 Findings
 Initiating Host: 10.129.43.27
-
 Target RDP Server: 10.129.43.29
-
-User Account Used: bob.infra
+User Account Used: Bucky
 
 Key Takeaways
-Wireshark can decrypt TLS traffic with the appropriate private key
-
-This allows full visibility into user actions and session behavior
-
-Demonstrates the importance of proper key management in enterprise environments
+- Wireshark can decrypt TLS traffic with the appropriate private key
+- This allows full visibility into user actions and session behavior
+- Demonstrates the importance of proper key management in enterprise environments
 
 Let’s Connect
 I'm actively seeking IT Support, SOC Analyst, or Security Operations roles where I can apply practical cybersecurity skills such as traffic analysis and decryption.
