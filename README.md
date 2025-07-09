@@ -78,7 +78,7 @@ The module is rated Medium and assumes comfort with Linux, networking, and basic
 ---
 
 ## Documentation
-- [Network Traffic Analysis WireShark](docs/)
+- [Network Traffic Analysis WireShark](docs/Network-Traffic-Analysis-Wireshark)
 - [NTA- Guided Lab](docs/NTA-Guided-Lab-Wireshark.md)
 - [tcpdump](docs/tcpdump-commands.md)
 - [Decrypting RDP Traffic](docs/Decrypting-RDP-Traffic.md)
