@@ -1,5 +1,4 @@
-
-# 📡 Network Traffic Analysis Lab (Wireshark)
+#  Network Traffic Analysis Lab (Wireshark)
 
 ## Project Overview
 This two-part lab introduces the foundational skills required to analyze network traffic using Wireshark. In Part 1, I examined pre-captured HTTP traffic to extract embedded files. In Part 2, I conducted a live capture from a suspicious host and analyzed both HTTP and FTP communications to uncover potential exfiltration and malicious behavior.
@@ -30,7 +29,7 @@ File → Open → Wireshark-lab-2.pcap
 ```
 
 <details>
-<summary>📎 Opened PCAP in Wireshark</summary>
+<summary>Opened PCAP in Wireshark</summary>
 <img src="screenshots/pcap-opened.png" alt="Opened PCAP File">
 </details>
 
@@ -38,12 +37,11 @@ File → Open → Wireshark-lab-2.pcap
 
 ### 2. Filter for HTTP Traffic
 Filtered for HTTP packets to reduce noise:
-```
-http
-```
+
+Filter: `http`
 
 <details>
-<summary>🔍 Filtered HTTP traffic</summary>
+<summary> Filtered HTTP traffic</summary>
 <img src="screenshots/http-filter.png" alt="HTTP Filter Applied">
 </details>
 
@@ -53,7 +51,7 @@ http
 Selected a `200 OK` response and followed the TCP stream. Searched for image identifiers such as `JFIF` (JPEG File Interchange Format).
 
 <details>
-<summary>🧠 JFIF image located</summary>
+<summary> JFIF image located</summary>
 <img src="screenshots/jfif-found.png" alt="JFIF Packet Identified">
 </details>
 
@@ -61,12 +59,11 @@ Selected a `200 OK` response and followed the TCP stream. Searched for image ide
 
 ### 4. Export Embedded Images
 Exported image files using:
-```
-File → Export Objects → HTTP
-```
+
+`File → Export Objects → HTTP`
 
 <details>
-<summary>📂 Exported image objects</summary>
+<summary>Exported image objects</summary>
 <img src="screenshots/export-http-objects.png" alt="Export HTTP Objects">
 </details>
 
@@ -78,7 +75,7 @@ File → Export Objects → HTTP
 Captured live traffic on interface `ens224` for a few minutes.
 
 <details>
-<summary>🔴 Live capture started</summary>
+<summary> Live capture started</summary>
 <img src="screenshots/live-capture.png" alt="Live Capture Started">
 </details>
 
@@ -86,13 +83,13 @@ Captured live traffic on interface `ens224` for a few minutes.
 
 ### 2. Analyze FTP Traffic
 Filtered for FTP:
-```
-ftp
-```
+
+`Filter: ftp`
+
 Identified server at `172.16.10.20` and verified login (authenticated or anonymous).
 
 <details>
-<summary>📦 FTP communication</summary>
+<summary> FTP communication</summary>
 <img src="screenshots/ftp-traffic.png" alt="FTP Traffic Found">
 </details>
 
@@ -102,27 +99,13 @@ Identified server at `172.16.10.20` and verified login (authenticated or anonymo
 Filtered `ftp-data` and reassembled payloads to extract transferred files.
 
 <details>
-<summary>🧩 FTP data reassembled</summary>
+<summary>FTP data reassembled</summary>
 <img src="screenshots/ftp-reassembled.png" alt="FTP Reassembled Data">
 </details>
 
 ---
 
-### 4. Analyze HTTP Traffic
-Filtered HTTP again:
-```
-http
-```
-Identified the web server and extracted files by following the HTTP stream.
-
-<details>
-<summary>🌐 HTTP file extraction</summary>
-<img src="screenshots/http-stream.png" alt="HTTP Stream Followed">
-</details>
-
----
-
-## 🧠 Key Skills & Learnings
+## Key Skills & Learnings
 - Applied packet-level analysis to uncover suspicious file transfers
 - Used filters to reduce noise and zero in on relevant protocols
 - Exported images and documents for digital forensics review
@@ -130,7 +113,7 @@ Identified the web server and extracted files by following the HTTP stream.
 
 ---
 
-## 📬 Let’s Connect
+## Let’s Connect
 I'm seeking entry-level roles in **Cybersecurity**, **SOC Analysis**, or **IT Support** where I can continue developing my packet analysis and security operations skills.
 
 **Email**: jovaan.jwhitton@gmail.com  
