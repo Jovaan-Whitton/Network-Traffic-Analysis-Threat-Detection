@@ -1,4 +1,4 @@
-# Guided Network Traffic Analysis Lab – Hack The Box
+# Network Traffic Analysis- Guided Lab
 
 ## Project Overview
 
