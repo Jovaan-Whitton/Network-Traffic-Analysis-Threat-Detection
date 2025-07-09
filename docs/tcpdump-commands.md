@@ -15,7 +15,12 @@ These commands supported real-time visibility and efficient CLI-based threat hun
 **Explanation:**  
 Returns the full path of the `tcpdump` binary on your system, confirming it is installed and accessible.
 
+<details>
+  <summary><strong>TCPdump Starting a live Capture</strong></summary>
+
 ![tcpdump -D](/screenshots/tcpdump-which-D-interface.png)
+
+</details>
 
 ---
 
@@ -24,7 +29,7 @@ Returns the full path of the `tcpdump` binary on your system, confirming it is i
 **Explanation:**  
 Lists all available network interfaces (e.g., `eth0`, `wlan0`) you can use for packet capture.
 
-(See above shared screenshot: `tcpdump-which-D-interface.png`)
+(See above shared screenshot: `TCPdump Starting a live Capture`)
 
 
 ---
@@ -37,7 +42,7 @@ Captures live traffic on the `ens3` interface.
 - `sudo`: stands for "superuser do" and is used to execute a command with temporary elevated (administrator/root) privileges.
 - `-i ens3`: Interface to listen on
 
-(See above shared screenshot: `tcpdump-which-D-interface.png`)
+(See above shared screenshot: `TCPdump Starting a live Capture`)
 
 ---
 
@@ -48,8 +53,13 @@ Captures live traffic on the `ens3` interface with detailed output.
 
 - `-v`: Verbose output (more header info)  
 - `-X`: Shows packet contents in both hex and ASCII
+
+<details>
+  <summary><strong>Live Capture with detailed output</strong></summary>
   
 ![tcpdump -D](/screenshots/tcpdump-ens3-vX.png)
+
+</details>
 
 ---
 
@@ -61,8 +71,13 @@ Captures live traffic and saves it to a `.pcap` file for later analysis.
 - `-n`: Don’t resolve hostnames  
 - `-v`: Verbose mode  
 - `-w ~/sample.pcap`: Write packet data to `sample.pcap` in the home directory
+
+<details>
+  <summary><strong>TCPdump saving captured traffic</strong></summary>
   
 ![tcpdump -nvw](/screenshots/tcpdump-capture-save.png)
+
+</details>
 
 ---
 
@@ -76,7 +91,7 @@ Reads packets from a saved `.pcap` file and shows deep packet information.
 - `-S`: Show absolute TCP sequence numbers  
 - `-X`: Show full packet content in hex and ASCII
   
-(See above shared screenshot: `tcpdump-capture-save.png`)
+(See above shared screenshot: `TCPdump saving captured traffic`)
 
 ---
 
@@ -85,7 +100,12 @@ Reads packets from a saved `.pcap` file and shows deep packet information.
 **Explanation:**  
 Reads all packets from a saved `.pcap` file without applying any filters.
 
+<details>
+  <summary><strong>Reading saved capture file</strong></summary>
+
 ![tcpdump -r](/screenshots/tcpdump-read-all.png)
+
+</details>
 
 ---
 
@@ -98,8 +118,13 @@ Reads a .pcap file and filters for DNS traffic (UDP over port 53).
 - S: Show absolute TCP sequence numbers
 - r: Read from file
 - `port 53`: Standard DNS port
+
+<details>
+  <summary><strong>Reading a capture file with filters</strong></summary>
   
 ![tcpdump DNS filter](/screenshots/tcpdump-read-pcap-port-filter.png)
+
+</details>
 
 ---
 
@@ -115,7 +140,7 @@ Filters for HTTP and HTTPS traffic from the capture file.
   
 *Same screenshot shown above, reused for HTTP traffic example.*
 
-(See above shared screenshot: `tcpdump-read-pcap-port-filter.png`)
+(See above shared screenshot: `Reading a capture file with filters`)
 
 ---
 
