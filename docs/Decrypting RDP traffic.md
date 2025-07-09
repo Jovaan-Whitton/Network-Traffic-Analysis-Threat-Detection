@@ -82,7 +82,7 @@ Applied:
 <details>
 <summary> Decrypted traffic Screenshots</strong></summary>
 
-### Decrypted traffic show using rdp filter  
+### Decrypted traffic shows using rdp filter  
 ![RDP Traffic in the clear](/screenshots/decrypted-rdp-traffic.png)
 
 ### TCP Connections 
