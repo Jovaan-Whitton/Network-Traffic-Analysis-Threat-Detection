@@ -71,7 +71,7 @@ The module is rated Medium and assumes comfort with Linux, networking, and basic
 ### Wireshark HTTP Filter Results
 ![Wireshark HTTP Filter](screenshots/wireshark-http.png)
 ### Exporting HTTP objects
-![Exporting HTTP Objects](screenshots/tcpdump-suspicious.png)
+![Exporting HTTP Objects](screenshots/objects-to-export.png)
 
 </details>
 
