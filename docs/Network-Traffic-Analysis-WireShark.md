@@ -27,11 +27,6 @@ Opened `Wireshark-lab-2.pcap` via:
 
 `File → Open → Wireshark-lab-2.pcap`
 
-<details>
-<summary>Opened PCAP in Wireshark</summary>
-<img src="screenshots/pcap-opened.png" alt="Opened PCAP File">
-</details>
-
 ---
 
 ### 2. Filter for HTTP Traffic
@@ -40,8 +35,10 @@ Filtered for HTTP packets to reduce noise:
 Filter: `http`
 
 <details>
-<summary> Filtered HTTP traffic</summary>
-<img src="screenshots/http-filter.png" alt="HTTP Filter Applied">
+  <summary> Filtered HTTP traffic</summary>
+  
+![Filtered HTTP Traffic](/screenshots/http-filter.png)
+
 </details>
 
 ---
@@ -50,8 +47,12 @@ Filter: `http`
 Selected a `200 OK` response and followed the TCP stream. Searched for image identifiers such as `JFIF` (JPEG File Interchange Format).
 
 <details>
-<summary> JFIF image located</summary>
-<img src="screenshots/jfif-found.png" alt="JFIF Packet Identified">
+  <summary> JFIF image located</summary> 
+
+![Follow TCP Stream](/screenshots/follow-tcp-stream.png)
+![TCP Stream Results](/screenshots/tcp-stream-results.png)
+![HTTP and Image-JFIF Filter](/screenshots/http-and-image-filter.png)
+
 </details>
 
 ---
@@ -62,8 +63,11 @@ Exported image files using:
 `File → Export Objects → HTTP`
 
 <details>
-<summary>Exported image objects</summary>
-<img src="screenshots/export-http-objects.png" alt="Export HTTP Objects">
+  <summary>Exported image objects</summary>
+  
+![Objects to Export](/screenshots/objects-to-export.png)
+![Exported Objects](/screenshots/-exported-objects.png)
+
 </details>
 
 ---
@@ -72,11 +76,6 @@ Exported image files using:
 
 ### 1. Start Live Capture
 Captured live traffic on interface `ens224` for a few minutes.
-
-<details>
-<summary> Live capture started</summary>
-<img src="screenshots/live-capture.png" alt="Live Capture Started">
-</details>
 
 ---
 
@@ -88,8 +87,11 @@ Filtered for FTP:
 Identified server at `172.16.10.20` and verified login (authenticated or anonymous).
 
 <details>
-<summary> FTP communication</summary>
-<img src="screenshots/ftp-traffic.png" alt="FTP Traffic Found">
+  <summary> FTP communication</summary>
+  
+![FTP Traffic Filter](/screenshots/ftp-filter.png)
+![FTP Request Command](/screenshots/ftp-req-command-filter.png)
+
 </details>
 
 ---
@@ -98,8 +100,13 @@ Identified server at `172.16.10.20` and verified login (authenticated or anonymo
 Filtered `ftp-data` and reassembled payloads to extract transferred files.
 
 <details>
-<summary>FTP data reassembled</summary>
-<img src="screenshots/ftp-reassembled.png" alt="FTP Reassembled Data">
+  <summary>FTP data reassembled</summary>
+  
+![FTP Data](/screenshots/ftp-data-filter.png)
+![FTP-Data-Stream](/screenshots/follow-ftp-data-stream.png)
+![FTP Data Stream Results](/screenshots/ftp-data-stream-results.png)
+![Confirmed Data Transfer](/screenshots/data-transfer-captured.png)
+
 </details>
 
 ---
