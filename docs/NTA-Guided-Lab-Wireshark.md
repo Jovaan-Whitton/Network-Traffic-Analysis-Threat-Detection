@@ -32,9 +32,9 @@ This lab simulates an internal incident response scenario where we analyzed susp
 <summary>Conversations & Protocol Overview</summary>
 <br>
 
-![Conversations Tab](/storage/modules/81/guided-conversations.png)
+![Conversations Tab](/screenshots/conversations-tool.png)
 
-![Protocol Hierarchy](/storage/modules/81/guided-proto.png)
+![Protocol Hierarchy](/screenshots/Hierarchy-tool.png)
 
 </details>
 
@@ -53,7 +53,7 @@ Result: Normal traffic (ARP, NAT, SSDP)
 <summary>UDP Filtering</summary>
 <br>
 
-![UDP Traffic](/storage/modules/81/guided-udp.png)
+![UDP Traffic](/screenshots/udp-traffic.png)
 
 </details>
 
@@ -65,10 +65,10 @@ Filtered only `tcp` by removing `udp` and `arp`:
 Result: Single persistent TCP connection between `10.129.43.4` and `10.129.43.29`
 
 <details>
-<summary>📡 TCP Traffic</summary>
+<summary>TCP Traffic</summary>
 <br>
 
-![TCP Filtered](/storage/modules/81/guided-tcp.png)
+![TCP Filtered](/screenshots/tcp-traffic-results.png)
 
 </details>
 
@@ -82,7 +82,7 @@ Observed a full TCP session established, but no teardown:
 <summary>TCP Handshake</summary>
 <br>
 
-![TCP Handshake](/storage/modules/81/guided-handshake.png)
+![TCP Handshake](/screenshots/odd-tcp-traffic.png)
 
 </details>
 
@@ -93,7 +93,8 @@ Followed TCP stream from packet 3 — session still open.
 <summary>Followed Stream</summary>
 <br>
 
-![TCP Stream Output](/storage/modules/81/guided-stream.png)
+![TCP Stream Output](/compromised-tcp-stream.png)
+![TCP Stream Output](/compromised-tcp-stream1.png)
 
 </details>
 
