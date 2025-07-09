@@ -24,9 +24,8 @@ This two-part lab introduces the foundational skills required to analyze network
 
 ### 1. Load the PCAP File
 Opened `Wireshark-lab-2.pcap` via:
-```
-File → Open → Wireshark-lab-2.pcap
-```
+
+`File → Open → Wireshark-lab-2.pcap`
 
 <details>
 <summary>Opened PCAP in Wireshark</summary>
