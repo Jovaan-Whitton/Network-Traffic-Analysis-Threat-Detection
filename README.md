@@ -49,7 +49,7 @@ This hands-on lab from Hack The Box focused on analyzing captured network traffi
 ---
 
 <details>
-   <summary>Key Visuals </summary>
+   <summary><strong>Key Visuals (click to expand)</strong> </summary>
 
 ### Starting a TCPDump Capture
 ![Starting a TCPDump Capture](screenshots/tcpdump-which-D-interface.png)
@@ -68,7 +68,7 @@ This hands-on lab from Hack The Box focused on analyzing captured network traffi
 
 ---
 
-## ✅ Result
+## Result
 Completed the lab with successful identification of malicious behavior within PCAP files. Demonstrated the ability to extract, document, and analyze IOCs—skills critical for SOC and incident response roles.
 
 ---
