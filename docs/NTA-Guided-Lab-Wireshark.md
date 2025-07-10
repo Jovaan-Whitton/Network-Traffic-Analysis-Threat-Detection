@@ -44,9 +44,7 @@ This lab simulates an internal incident response scenario where we analyzed susp
 ### Step 1: Filter UDP
 Filtered only `udp` packets:
 
-`!tcp`
-
-Result: Normal traffic (ARP, NAT, SSDP)
+`!tcp` Result: Normal traffic (ARP, NAT, SSDP)
 
 <details>
   <summary>UDP Filtering</summary>
