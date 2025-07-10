@@ -62,7 +62,7 @@ The module is rated Medium and assumes comfort with Linux, networking, and basic
 - Developed an IOC extraction and reporting process for SOC readiness
 
 ---
- ## All visuals stored in [`screenshots/`[(screenshots/) subfolder
+ ## All visuals stored in [`screenshots/`](screenshots/) subfolder
 <details>
    <summary><strong>Key Visuals (click to expand)</strong> </summary>
 
