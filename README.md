@@ -91,9 +91,5 @@ Completed the full HTB module and related labs with successful identification of
 
 ---
 
-## Let’s Connect
-I’m actively seeking IT Support or SOC Analyst roles in New York City or remote/hybrid environments. Let’s connect!
-
-**Email**: jovaan.jwhitton@gmail.com  
-**LinkedIn**: [linkedin.com/in/jovaan-whitton-profile](https://linkedin.com/in/jovaan-whitton-profile)
+*[Visit My GitHub Landing Page](https://github.com/jovaan)*
 
