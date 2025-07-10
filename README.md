@@ -91,5 +91,5 @@ Completed the full HTB module and related labs with successful identification of
 
 ---
 
-*[Visit My GitHub Landing Page](https://github.com/jovaan)*
+*[Visit My GitHub Landing Page](https://github.com/Jovaan-Whitton)*
 
