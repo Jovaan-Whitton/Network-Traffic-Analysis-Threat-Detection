@@ -103,9 +103,6 @@ Key Takeaways
 - This allows full visibility into user actions and session behavior
 - Demonstrates the importance of proper key management in enterprise environments
 
-Let’s Connect
-I'm actively seeking IT Support, SOC Analyst, or Security Operations roles where I can apply practical cybersecurity skills such as traffic analysis and decryption.
+---
 
-Email: jovaan.jwhitton@gmail.com
-LinkedIn: linkedin.com/in/jovaan-whitton-profile
-
+*[Back to Main Project](../README.md)*
