@@ -1,5 +1,17 @@
 #  Network Traffic Analysis Lab (Wireshark)
 
+## Scenario Background
+
+This lab simulates a real-world scenario involving insider threats and covert data exfiltration:
+
+- In **Part 1**, the SOC team received a packet capture file containing traffic from an unencrypted web session. Initial suspicion pointed to a user embedding hidden messages within images. Your task is to apply HTTP filters in Wireshark, extract those files, and uncover evidence of misuse.
+
+- In **Part 2**, after analyzing the pcap, the Security Manager confirms that the user was indeed smuggling data via images. You are then asked to perform a **live capture** from the user’s host at `172.16.10.2` to identify any further suspicious behavior. This involves isolating FTP/HTTP traffic and extracting indicators that may reveal a broader compromise.
+
+This hands-on investigation reinforces the importance of protocol filtering, traffic isolation, and forensic artifact extraction in a threat-hunting context.
+
+---
+
 ## Project Overview
 This two-part lab introduces the foundational skills required to analyze network traffic using Wireshark. In Part 1, I examined pre-captured HTTP traffic to extract embedded files. In Part 2, I conducted a live capture from a suspicious host and analyzed both HTTP and FTP communications to uncover potential exfiltration and malicious behavior.
 
