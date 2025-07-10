@@ -119,8 +119,4 @@ Filtered `ftp-data` and reassembled payloads to extract transferred files.
 
 ---
 
-## Let’s Connect
-I'm seeking entry-level roles in **Cybersecurity**, **SOC Analysis**, or **IT Support** where I can continue developing my packet analysis and security operations skills.
-
-**Email**: jovaan.jwhitton@gmail.com  
-**LinkedIn**: [linkedin.com/in/jovaan-whitton-profile](https://linkedin.com/in/jovaan-whitton-profile)
+*[Back to Main Project](../README.md)*
