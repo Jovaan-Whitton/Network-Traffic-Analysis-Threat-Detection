@@ -123,8 +123,4 @@ This lab provided practical experience in:
 
 ---
 
-## Let’s Connect
-I'm seeking entry-level roles in **Cybersecurity**, **SOC Analysis**, or **Incident Response** where I can use my growing traffic analysis and IR skills.
-
-**Email**: jovaan.jwhitton@gmail.com  
-**LinkedIn**: [linkedin.com/in/jovaan-whitton-profile](https://linkedin.com/in/jovaan-whitton-profile)
+*[Back to Main Project](../README.md)*
